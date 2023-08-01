@@ -10,9 +10,9 @@ class PersonViewModel {
     
     func fetchRandomUser(completion: @escaping (Result<User, Error>) -> Void) {
         RandomUserService { result in
-                    DispatchQueue.main.async {
-                        completion(result)
-                    }
-                }
+            DispatchQueue.main.async {
+                completion(result)
+            }
+        }
     }
 }
