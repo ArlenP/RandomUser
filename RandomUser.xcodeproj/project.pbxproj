@@ -16,6 +16,9 @@
 		AB46CA252A798503001729DC /* RandomUserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB46CA242A798503001729DC /* RandomUserTests.swift */; };
 		AB46CA2F2A798503001729DC /* RandomUserUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB46CA2E2A798503001729DC /* RandomUserUITests.swift */; };
 		AB46CA312A798503001729DC /* RandomUserUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB46CA302A798503001729DC /* RandomUserUITestsLaunchTests.swift */; };
+		AB46CA3F2A798CE0001729DC /* PersonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB46CA3E2A798CE0001729DC /* PersonModel.swift */; };
+		AB46CA412A7990CF001729DC /* PersonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB46CA402A7990CF001729DC /* PersonViewModel.swift */; };
+		AB46CA452A7991FC001729DC /* RandomUserAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB46CA442A7991FC001729DC /* RandomUserAPIService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		AB46CA2A2A798503001729DC /* RandomUserUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandomUserUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB46CA2E2A798503001729DC /* RandomUserUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserUITests.swift; sourceTree = "<group>"; };
 		AB46CA302A798503001729DC /* RandomUserUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AB46CA3E2A798CE0001729DC /* PersonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonModel.swift; sourceTree = "<group>"; };
+		AB46CA402A7990CF001729DC /* PersonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewModel.swift; sourceTree = "<group>"; };
+		AB46CA442A7991FC001729DC /* RandomUserAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserAPIService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,7 @@
 		AB46CA0C2A798502001729DC /* RandomUser */ = {
 			isa = PBXGroup;
 			children = (
+				AB46CA3D2A798CB7001729DC /* Person */,
 				AB46CA0D2A798502001729DC /* AppDelegate.swift */,
 				AB46CA0F2A798502001729DC /* SceneDelegate.swift */,
 				AB46CA112A798502001729DC /* ViewController.swift */,
@@ -125,6 +132,16 @@
 				AB46CA302A798503001729DC /* RandomUserUITestsLaunchTests.swift */,
 			);
 			path = RandomUserUITests;
+			sourceTree = "<group>";
+		};
+		AB46CA3D2A798CB7001729DC /* Person */ = {
+			isa = PBXGroup;
+			children = (
+				AB46CA3E2A798CE0001729DC /* PersonModel.swift */,
+				AB46CA402A7990CF001729DC /* PersonViewModel.swift */,
+				AB46CA442A7991FC001729DC /* RandomUserAPIService.swift */,
+			);
+			path = Person;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +275,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB46CA452A7991FC001729DC /* RandomUserAPIService.swift in Sources */,
+				AB46CA3F2A798CE0001729DC /* PersonModel.swift in Sources */,
+				AB46CA412A7990CF001729DC /* PersonViewModel.swift in Sources */,
 				AB46CA122A798502001729DC /* ViewController.swift in Sources */,
 				AB46CA0E2A798502001729DC /* AppDelegate.swift in Sources */,
 				AB46CA102A798502001729DC /* SceneDelegate.swift in Sources */,

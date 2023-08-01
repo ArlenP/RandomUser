@@ -1,0 +1,17 @@
+# Ignorar archivos generados por Xcode
+.DS_Store
+build/
+DerivedData/
+xcuserdata/
+
+# Ignorar el directorio de dependencias de CocoaPods
+Pods/
+
+# Ignorar archivos y directorios específicos de Swift
+*.xcodeproj
+*.xcworkspace
+*.playground
+*.swiftmodule
+*.swiftdoc
+*.swiftsourceinfo
+
