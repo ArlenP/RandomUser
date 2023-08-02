@@ -13,8 +13,11 @@ struct RandomUserResponse: Codable {
 
 struct User: Codable {
     let gender: String?
+    let email: String?
     let name: Name
     let location: Location?
+    let dob: Dob?
+    let picture: Picture?
     
     struct Name: Codable {
         let title: String?
@@ -28,22 +31,34 @@ struct User: Codable {
         let state: String?
         let country: String?
         let postcode: Postcode?
+        let coordinates: Coordinates?
         
         struct Street: Codable {
             let number: Int?
             let name: String?
         }
-        
+    }
+    struct Dob: Codable {
+        let date: String?
+        let age: Int?
+    }
+    struct Picture: Codable{
+        let large: String?
+    }
+    struct Coordinates: Codable{
+        let latitude: String?
+        let longitude: String?
     }
 }
+
 
 struct Postcode: Codable {
     private enum CodingKeys: CodingKey {
         case intValue, stringValue
     }
     
-    private var intValue: Int?
-    private var stringValue: String?
+    var intValue: Int?
+    var stringValue: String?
     
     init(from decoder: Decoder) throws {
         let container = try decoder.singleValueContainer()
